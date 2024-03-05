@@ -5,7 +5,7 @@ c = 8
  
 # Find the smallest number using conditions
 if a <= b and a <= c:
-    smallest = num1
+    smallest = a
 elif b <= a and b <= c:
     smallest = b
 else:
