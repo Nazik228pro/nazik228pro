@@ -1,20 +1,10 @@
-# Input word for checking
-word = input("pupok: ")
 
-# Convert the word to lowercase for simplification of the check
-word = word.lower()
-
-# Variable to store the result of the check
-is_pupok = True
-
-# Loop for pupok check
-for i in range(len(word) // 2):
-    if word[i] != word[len(word) - i - 1]:
-        is_pupok = False
-        break
-
-# Output the result
-if is_pupok:
-    print("The word", word, "is a pupok.")
+word = "pupok: "
+new_word='' #kupop
+for i in word:
+    print(x)
+# Output the result:
+    if word == new_word
+    print("word.")
 else:
-    print("The word", word, "is not a pupok.")
+    print("new_word.")
