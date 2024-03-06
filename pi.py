@@ -1,15 +1,22 @@
-# Given three numbers
-a = 10
-b = 5
-c = 8
- 
-# Find the smallest number using conditions
-if a <= b and a <= c:
-    smallest = a
-elif b <= a and b <= c:
-    smallest = b
+# Input word for checking
+word = input("pupok: ")
+
+# Convert the word to lowercase for simplification of the check
+word = word.lower()
+
+# Variable to store the result of the check
+is_pupok = True
+
+# Loop for pallindrom check
+for i in range(len(word) // 2):
+    if word[i] != word[len(word) - i - 1]:
+        is_palindrome = False
+        break
+
+# Output the result
+if is_pupok:
+    print("The word", word, "is a pupok.")
 else:
-    smallest = c
+    print("The word", word, "is not a pupok.")
+
  
-# Print the result
-print("Smallest number:", smallest)
